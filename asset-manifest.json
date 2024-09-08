@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/club-apex/static/css/main.d0b29685.css",
-    "main.js": "/club-apex/static/js/main.cd061d64.js",
+    "main.css": "/club-apex/static/css/main.88b9e8d2.css",
+    "main.js": "/club-apex/static/js/main.b0e50ea1.js",
     "static/media/header-background.jpg": "/club-apex/static/media/header-background.f0e18d8905af5e4b2619.jpg",
     "static/media/event2.jpg": "/club-apex/static/media/event2.dba392499221f90c336e.jpg",
     "static/media/project4.jpg": "/club-apex/static/media/project4.927e04e213266944a9bd.jpg",
@@ -12,12 +12,16 @@
     "static/media/event3.jpg": "/club-apex/static/media/event3.f190f8e0d652a943d63a.jpg",
     "static/media/event4.jpg": "/club-apex/static/media/event4.a3ef10d4bd9a822edbfe.jpg",
     "static/media/go-kart.jpg": "/club-apex/static/media/go-kart.acaab40662069dffce35.jpg",
+    "static/media/slick.svg": "/club-apex/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/club-apex/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/club-apex/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/club-apex/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/club-apex/index.html",
-    "main.d0b29685.css.map": "/club-apex/static/css/main.d0b29685.css.map",
-    "main.cd061d64.js.map": "/club-apex/static/js/main.cd061d64.js.map"
+    "main.88b9e8d2.css.map": "/club-apex/static/css/main.88b9e8d2.css.map",
+    "main.b0e50ea1.js.map": "/club-apex/static/js/main.b0e50ea1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b29685.css",
-    "static/js/main.cd061d64.js"
+    "static/css/main.88b9e8d2.css",
+    "static/js/main.b0e50ea1.js"
   ]
 }
