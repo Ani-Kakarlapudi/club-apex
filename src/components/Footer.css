@@ -1,25 +1,25 @@
+/* Footer.css */
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center; /* Center align text */
 }
 
 .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1200px; /* Max width for content */
+    margin: auto; /* Center the content */
 }
 
 .social-links {
-    margin-top: 10px;
+    margin-top: 10px; /* Space above social links */
 }
 
 .social-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    margin: 0 10px; /* Margin between links */
 }
 
-.social-link:hover {
-    text-decoration: underline;
+.social-link img {
+    width: 20px; /* Set the desired width for the icons */
+    height: 20px; /* Set the desired height for the icons */
 }

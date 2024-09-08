@@ -45,9 +45,11 @@ const About = () => {
                 <img src={goKartImage} alt="Go-Kart" />
             </div>
             <div className="about-content" ref={contentRef}>
-                <h2>Our Goal: Building an Innovative Go-Kart</h2>
+                <h2>Our Goal: Foster a love for automobiles among students</h2>
                 <p>
-                    As the Automobile Club of University college of Engineering Kakinada, our mission is to design and build an exceptional go-kart that showcases our engineering prowess and passion for automotive innovation. Through this project, we aim to gain hands-on experience, push the boundaries of engineering, and inspire others to join us in our journey of discovery.
+                    As the Automobile Club of University college of Engineering Kakinada, our mission is to foster a love for automobiles among students, encouraging them to pursue careers in automotive engineering. 
+
+Collaborate with industry leaders to provide practical experience and promote product development.
                 </p>
             </div>
         </section>

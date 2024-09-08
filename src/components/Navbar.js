@@ -12,7 +12,10 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div className="container">
-                <a className="navbar-brand" href="#">Club Apex</a>
+                <div className="navbar-left">
+                    <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Apex Club Logo" className="navbar-logo" /> {/* Left Logo */}
+                    <a className="navbar-brand">Club Apex</a>
+                </div>
                 <button 
                     className="navbar-toggler" 
                     type="button" 
@@ -29,7 +32,7 @@ const Navbar = () => {
                             <Link to="home" smooth={true} duration={100} className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="about" smooth={true} duration={100} className="nav-link">Our vision</Link>
+                            <Link to="about" smooth={true} duration={100} className="nav-link">Our Vision</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="projects" smooth={true} duration={100} className="nav-link">Projects</Link>
@@ -45,6 +48,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link to="contact" smooth={true} duration={100} className="nav-link">Contact</Link>
+                        </li>
+                        <li className="nav-item">
+                            <img src={`${process.env.PUBLIC_URL}/second-logo.png`} alt="Second Logo" className="navbar-second-logo" /> {/* Right Logo */}
                         </li>
                     </ul>
                 </div>

@@ -1,22 +1,44 @@
+/* src/components/Gallery.css */
+
 .gallery {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.gallery-item {
   text-align: center;
-}
-
-.gallery h2 {
-  margin-bottom: 20px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  width: 150px; /* Set a fixed width for the item */
+  height: 400px; /* Set a fixed height for the item */
+  overflow: hidden; /* Hide overflow if the image is too large */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make images responsive to the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; /* Set a maximum width */
+  max-height: 400px; /* Set a maximum height */
+}
+
+/* Additional styles for the slider */
+.slick-slider {
+  margin-top: 1rem;
+}
+
+.slick-arrow {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 1rem;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 1rem;
 }
