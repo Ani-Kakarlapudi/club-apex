@@ -1,0 +1,34 @@
+.contact {
+    padding: 50px 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center align content */
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 40px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+.contact-info {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
+}
+
+.info-item {
+    display: flex; /* Use flexbox to align icon and text */
+    align-items: center; /* Vertically center the content */
+    margin: 20px; /* Add some space between items */
+}
+
+.info-item i {
+    font-size: 2rem; /* Set the icon size */
+    margin-right: 10px; /* Add some space between icon and text */
+    color: #007bff; /* Blue color for the icon */
+}
+
+.info-item p {
+    font-size: 1.2rem; /* Set the text size */
+    color: #555; /* Medium gray color for the text */
+}

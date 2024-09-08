@@ -1,0 +1,51 @@
+.team {
+  padding: 50px 20px; /* Add padding for spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.team h2 {
+  font-size: 2.5rem; /* Larger font size for the heading */
+  margin-bottom: 40px; /* Space below the heading */
+  text-align: center; /* Center align the heading */
+  color: #333; /* Dark color for the heading */
+}
+
+.team-category {
+  margin-bottom: 40px; /* Space between categories */
+}
+
+.team-category h3 {
+  font-size: 2rem; /* Font size for subcategory headings */
+  margin-bottom: 20px; /* Space below subcategory heading */
+  color: #555; /* Medium gray color for subcategory heading */
+}
+
+.team-grid {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items */
+  flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
+}
+
+.team-member {
+  background-color: white; /* White background for member cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Padding for content */
+  margin: 5px; /* Add a small gap between members */
+  width: 140px; /* Set a fixed width for the member box */
+}
+
+.team-member img {
+  width: 120px; /* Set a fixed width for the image */
+  height: 120px; /* Set a fixed height for the image */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  margin-bottom: 5px; /* Space below the image */
+}
+
+.team-member h4 {
+  font-size: 1rem; /* Heading font size for members */
+  margin: 5px 0; /* Space around the name */
+  color: #333; /* Dark color for the member's name */
+}

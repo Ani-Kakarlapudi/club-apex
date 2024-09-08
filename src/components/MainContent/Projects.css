@@ -1,0 +1,67 @@
+.projects {
+  padding: 50px 20px; /* Add padding for spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.projects h2 {
+  font-size: 2.5rem; /* Larger font size for the heading */
+  margin-bottom: 40px; /* Space below the heading */
+  text-align: center; /* Center align the heading */
+  color: #333; /* Dark color for the heading */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  grid-gap: 30px; /* Space between grid items */
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden; /* Hide any content that exceeds the item's boundaries */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.project-item img {
+  width: 100%; /* Responsive image */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.project-info {
+  padding: 20px; /* Space around the content */
+  background-color: white; /* White background for the info section */
+  text-align: center; /* Center align text */
+}
+
+.project-info h3 {
+  font-size: 1.5rem; /* Heading font size */
+  margin: 10px 0; /* Space around the heading */
+  color: #333; /* Dark color for the heading */
+}
+
+.project-info p {
+  font-size: 1rem; /* Paragraph font size */
+  color: #555; /* Medium gray color for text */
+}
+
+.project-button {
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.project-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
