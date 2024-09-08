@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/club-apex/static/css/main.d0b29685.css",
+    "main.js": "/club-apex/static/js/main.cd061d64.js",
+    "static/media/header-background.jpg": "/club-apex/static/media/header-background.f0e18d8905af5e4b2619.jpg",
+    "static/media/event2.jpg": "/club-apex/static/media/event2.dba392499221f90c336e.jpg",
+    "static/media/project4.jpg": "/club-apex/static/media/project4.927e04e213266944a9bd.jpg",
+    "static/media/project2.jpg": "/club-apex/static/media/project2.2a79e4e25aa7ca49b54a.jpg",
+    "static/media/event1.jpg": "/club-apex/static/media/event1.2a17333732f4d2a30e34.jpg",
+    "static/media/project1.jpg": "/club-apex/static/media/project1.07626292d9341f757b14.jpg",
+    "static/media/project3.jpg": "/club-apex/static/media/project3.4eb92b3a87aae11bf88d.jpg",
+    "static/media/event3.jpg": "/club-apex/static/media/event3.f190f8e0d652a943d63a.jpg",
+    "static/media/event4.jpg": "/club-apex/static/media/event4.a3ef10d4bd9a822edbfe.jpg",
+    "static/media/go-kart.jpg": "/club-apex/static/media/go-kart.acaab40662069dffce35.jpg",
+    "index.html": "/club-apex/index.html",
+    "main.d0b29685.css.map": "/club-apex/static/css/main.d0b29685.css.map",
+    "main.cd061d64.js.map": "/club-apex/static/js/main.cd061d64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0b29685.css",
+    "static/js/main.cd061d64.js"
+  ]
+}
