@@ -2,7 +2,7 @@
   background-image: url('../assets/header-background.jpg'); /* Correct path to the local image */
   background-size: cover;
   background-position: center;
-  height: 600px; /* Adjust height as needed */
+  height: 600px; /* Default height for desktop */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,39 +18,58 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Dark overlay for better text visibility */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
 }
 
 .header-content {
   position: relative;
   z-index: 1; /* Ensure content is above the overlay */
+  padding: 0 20px; /* Add some padding to the content */
 }
 
-.header h1 {
-  font-size: 3rem; /* Adjust size as needed */
+.header-title {
+  font-size: 3rem; /* Default size for desktop */
   margin-bottom: 20px;
 }
 
-.header p {
-  font-size: 1.5rem; /* Adjust size as needed */
+.header-subtitle {
+  font-size: 1.5rem; /* Default size for desktop */
   margin-bottom: 30px;
 }
 
 .cta-button {
   background-color: orange; /* Button color */
   color: white;
-  padding: 10px 20px; /* Reduced padding */
+  padding: 12px 30px; /* Default padding */
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem; /* Reduced font size */
+  font-size: 1rem; /* Default font size */
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #FF8C00; /* Darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    height: 400px; /* Reduced height for smaller screens */
+    padding: 20px 0; /* Add vertical padding for spacing */
+  }
+
+  .header-title {
+    font-size: 2.5rem; /* Reduced font size for smaller screens */
+    margin-bottom: 10px; /* Reduced margin for compactness */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem; /* Reduced font size for smaller screens */
+    margin-bottom: 15px; /* Reduced margin for compactness */
+  }
+
+  .cta-button {
+    padding: 10px 25px; /* Reduced padding for smaller screens */
+    font-size: 1rem; /* Font size for smaller screens */
+  }
 }

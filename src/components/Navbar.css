@@ -3,11 +3,17 @@
 .navbar {
   background-color: #f8f9fa; /* Light background color */
   padding: 10px 20px; /* Padding around the navbar */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Center items vertically */
+  position: relative; /* Set position relative for absolute positioning of the second logo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .navbar-left {
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
+  margin-right: 20px; /* Add margin to create space between the logos */
 }
 
 .navbar-logo {
@@ -15,13 +21,92 @@
   margin-right: 10px; /* Space between logo and brand name */
 }
 
-.navbar-second-logo {
-  height: 40px; /* Set the desired height for the right logo */
-  margin-left: 10px; /* Space between the logo and the contact link */
+.navbar-brand {
+  color: #222; /* Darker color for the brand text */
+  font-weight: bold; /* Make the brand name bold */
+  margin: 0; /* Remove default margin */
+  padding-right: 100px; /* Add padding to the right to create space between text and second logo */
 }
 
-.navbar-brand {
-  display: flex; /* Use flexbox to align logo and text */
-  align-items: center; /* Center items vertically */
-  margin-left: 0; /* Remove any margin */
+.navbar-second-logo {
+  height: 40px; /* Set the desired height for the right logo */
+}
+
+/* Ensure the right logo is positioned absolutely in desktop view */
+.navbar-right {
+  position: absolute; /* Position absolutely */
+  top: 50%; /* Center vertically */
+  right: 20px; /* Position it to the right */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+/* Navbar links */
+.navbar-nav {
+  display: flex; /* Use flexbox for nav items */
+  list-style: none; /* Remove default list styling */
+}
+
+.nav-item {
+  margin-left: 20px; /* Space between nav items */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Default link color */
+  padding: 10px; /* Padding around links */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+  font-weight: bold; /* Make active link bold */
+  color: #007bff; /* Change color for active link */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Keep items in a row on mobile */
+    align-items: center; /* Align items to center */
+    position: relative; /* Keep the navbar position relative */
+  }
+
+  .navbar-left {
+    order: 1; /* Ensure the left section is first */
+    margin-right: 20px; /* Add margin to create space between the first logo and the second logo */
+    z-index: 1; /* Ensure it stays above other elements */
+  }
+
+  .navbar-right {
+    order: 2; /* Ensure the right logo is second */
+    display: flex; /* Show the second logo */
+    margin-right: 10px; /* Space between the right logo and hamburger button */
+    z-index: 1; /* Ensure it stays above other elements */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Full width for mobile */
+    display: none; /* Hide nav items by default */
+    position: absolute; /* Position the nav items absolutely */
+    top: 100%; /* Position below the navbar */
+    left: 0; /* Align to the left */
+    background-color: #f8f9fa; /* Set a background color for the nav items */
+    padding: 10px; /* Add some padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    z-index: 0; /* Ensure it is below the logos */
+  }
+
+  .navbar-collapse.show {
+    display: flex; /* Show nav items when expanded */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Space between nav items */
+    width: 100%; /* Full width for mobile */
+  }
 }

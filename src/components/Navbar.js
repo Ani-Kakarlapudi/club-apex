@@ -49,10 +49,10 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link to="contact" smooth={true} duration={100} className="nav-link">Contact</Link>
                         </li>
-                        <li className="nav-item">
-                            <img src={`${process.env.PUBLIC_URL}/second-logo.png`} alt="Second Logo" className="navbar-second-logo" /> {/* Right Logo */}
-                        </li>
                     </ul>
+                </div>
+                <div className="navbar-right">
+                    <img src={`${process.env.PUBLIC_URL}/second-logo.png`} alt="Second Logo" className="navbar-second-logo" /> {/* Right Logo */}
                 </div>
             </div>
         </nav>

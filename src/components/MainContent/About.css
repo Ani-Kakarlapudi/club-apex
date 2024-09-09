@@ -53,12 +53,35 @@
     color: #555; /* Medium gray color for text */
 }
 
-.about-image.animate {
-    transform: translateX(0); /* Final position after animation */
-    opacity: 1; /* Final opacity after animation */
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse; /* Stack items vertically with image on top */
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
 
-.about-content.animate {
-    transform: translateX(0); /* Final position after animation */
-    opacity: 1; /* Final opacity after animation */
+    .about-image {
+        margin-bottom: 20px; /* Space below the image */
+        transform: translateY(-50px); /* Initial position for mobile animation */
+        opacity: 0; /* Initial opacity for mobile animation */
+    }
+
+    .about-image.animate {
+        transform: translateY(0); /* Final position after mobile animation */
+        opacity: 1; /* Final opacity after mobile animation */
+    }
+
+    .about-content {
+        transform: translateY(0); /* Reset transform for mobile view */
+        opacity: 1; /* Set opacity to 1 for fixed visibility */
+        /* Remove animation for mobile */
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem; /* Reduced font size for the heading */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Reduced font size for paragraph */
+    }
 }
